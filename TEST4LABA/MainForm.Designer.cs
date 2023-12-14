@@ -32,6 +32,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bottom_Info_Panel = new System.Windows.Forms.Panel();
+            this.panel_Info_Country = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel_trackbar_country = new System.Windows.Forms.Panel();
+            this.red_cursor_country = new System.Windows.Forms.PictureBox();
+            this.lbl_vaccine_country = new System.Windows.Forms.Label();
+            this.pictureBox_country_pandemic = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_season = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.trackBar_vaccine_country = new System.Windows.Forms.TrackBar();
+            this.lbl_country_towns = new System.Windows.Forms.Label();
+            this.button_country_vaccinated = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_country_population = new System.Windows.Forms.Label();
+            this.lbl_country_infected = new System.Windows.Forms.Label();
+            this.lbl_country_vaccinated = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox_Earth = new System.Windows.Forms.PictureBox();
             this.pictureBox_defolt = new System.Windows.Forms.PictureBox();
             this.panel_Info_Town = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,27 +81,6 @@
             this.label_money = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.pictureBox_money = new System.Windows.Forms.PictureBox();
-            this.panel_Info_Country = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel_trackbar_country = new System.Windows.Forms.Panel();
-            this.red_cursor_country = new System.Windows.Forms.PictureBox();
-            this.lbl_vaccine_country = new System.Windows.Forms.Label();
-            this.pictureBox_country_pandemic = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lbl_season = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.trackBar_vaccine_country = new System.Windows.Forms.TrackBar();
-            this.lbl_country_towns = new System.Windows.Forms.Label();
-            this.button_country_vaccinated = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lbl_country_population = new System.Windows.Forms.Label();
-            this.lbl_country_infected = new System.Windows.Forms.Label();
-            this.lbl_country_vaccinated = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox_Earth = new System.Windows.Forms.PictureBox();
             this.panel_date = new System.Windows.Forms.Panel();
             this.lbl_date_month = new System.Windows.Forms.Label();
             this.lbl_date_day = new System.Windows.Forms.Label();
@@ -95,6 +95,12 @@
             this.button_2speedDown = new System.Windows.Forms.Button();
             this.lbl_end = new System.Windows.Forms.Label();
             this.bottom_Info_Panel.SuspendLayout();
+            this.panel_Info_Country.SuspendLayout();
+            this.panel_trackbar_country.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.red_cursor_country)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_country_pandemic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine_country)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Earth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_defolt)).BeginInit();
             this.panel_Info_Town.SuspendLayout();
             this.panel_trackbar_place.SuspendLayout();
@@ -103,12 +109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Town)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_money)).BeginInit();
-            this.panel_Info_Country.SuspendLayout();
-            this.panel_trackbar_country.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.red_cursor_country)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_country_pandemic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine_country)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Earth)).BeginInit();
             this.panel_date.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.top_info_panel.SuspendLayout();
@@ -134,6 +134,240 @@
             this.bottom_Info_Panel.Name = "bottom_Info_Panel";
             this.bottom_Info_Panel.Size = new System.Drawing.Size(1584, 179);
             this.bottom_Info_Panel.TabIndex = 0;
+            // 
+            // panel_Info_Country
+            // 
+            this.panel_Info_Country.Controls.Add(this.button1);
+            this.panel_Info_Country.Controls.Add(this.panel_trackbar_country);
+            this.panel_Info_Country.Controls.Add(this.lbl_vaccine_country);
+            this.panel_Info_Country.Controls.Add(this.pictureBox_country_pandemic);
+            this.panel_Info_Country.Controls.Add(this.label11);
+            this.panel_Info_Country.Controls.Add(this.lbl_season);
+            this.panel_Info_Country.Controls.Add(this.label8);
+            this.panel_Info_Country.Controls.Add(this.trackBar_vaccine_country);
+            this.panel_Info_Country.Controls.Add(this.lbl_country_towns);
+            this.panel_Info_Country.Controls.Add(this.button_country_vaccinated);
+            this.panel_Info_Country.Controls.Add(this.label10);
+            this.panel_Info_Country.Controls.Add(this.lbl_country_population);
+            this.panel_Info_Country.Controls.Add(this.lbl_country_infected);
+            this.panel_Info_Country.Controls.Add(this.lbl_country_vaccinated);
+            this.panel_Info_Country.Controls.Add(this.label4);
+            this.panel_Info_Country.Controls.Add(this.label3);
+            this.panel_Info_Country.Controls.Add(this.label2);
+            this.panel_Info_Country.Controls.Add(this.label1);
+            this.panel_Info_Country.Controls.Add(this.pictureBox_Earth);
+            this.panel_Info_Country.Location = new System.Drawing.Point(175, 11);
+            this.panel_Info_Country.Name = "panel_Info_Country";
+            this.panel_Info_Country.Size = new System.Drawing.Size(1397, 155);
+            this.panel_Info_Country.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1003, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Проверка";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel_trackbar_country
+            // 
+            this.panel_trackbar_country.BackColor = System.Drawing.Color.Lime;
+            this.panel_trackbar_country.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_trackbar_country.Controls.Add(this.red_cursor_country);
+            this.panel_trackbar_country.Location = new System.Drawing.Point(1135, 43);
+            this.panel_trackbar_country.Name = "panel_trackbar_country";
+            this.panel_trackbar_country.Size = new System.Drawing.Size(240, 50);
+            this.panel_trackbar_country.TabIndex = 27;
+            // 
+            // red_cursor_country
+            // 
+            this.red_cursor_country.BackColor = System.Drawing.Color.Black;
+            this.red_cursor_country.Location = new System.Drawing.Point(-1, 0);
+            this.red_cursor_country.Name = "red_cursor_country";
+            this.red_cursor_country.Size = new System.Drawing.Size(10, 50);
+            this.red_cursor_country.TabIndex = 26;
+            this.red_cursor_country.TabStop = false;
+            // 
+            // lbl_vaccine_country
+            // 
+            this.lbl_vaccine_country.AutoSize = true;
+            this.lbl_vaccine_country.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_vaccine_country.Location = new System.Drawing.Point(1231, 124);
+            this.lbl_vaccine_country.Name = "lbl_vaccine_country";
+            this.lbl_vaccine_country.Size = new System.Drawing.Size(20, 23);
+            this.lbl_vaccine_country.TabIndex = 25;
+            this.lbl_vaccine_country.Text = "0";
+            // 
+            // pictureBox_country_pandemic
+            // 
+            this.pictureBox_country_pandemic.BackgroundImage = global::TEST4LABA.Resources.earth_pandemic;
+            this.pictureBox_country_pandemic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_country_pandemic.Location = new System.Drawing.Point(20, 44);
+            this.pictureBox_country_pandemic.Name = "pictureBox_country_pandemic";
+            this.pictureBox_country_pandemic.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox_country_pandemic.TabIndex = 21;
+            this.pictureBox_country_pandemic.TabStop = false;
+            this.pictureBox_country_pandemic.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(1130, 124);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 23);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Значение:";
+            // 
+            // lbl_season
+            // 
+            this.lbl_season.AutoSize = true;
+            this.lbl_season.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_season.Location = new System.Drawing.Point(528, 90);
+            this.lbl_season.Name = "lbl_season";
+            this.lbl_season.Size = new System.Drawing.Size(20, 23);
+            this.lbl_season.TabIndex = 14;
+            this.lbl_season.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(255, 90);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 23);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Сезон года";
+            // 
+            // trackBar_vaccine_country
+            // 
+            this.trackBar_vaccine_country.AutoSize = false;
+            this.trackBar_vaccine_country.BackColor = System.Drawing.SystemColors.Control;
+            this.trackBar_vaccine_country.Location = new System.Drawing.Point(1125, 98);
+            this.trackBar_vaccine_country.Maximum = 10000;
+            this.trackBar_vaccine_country.Minimum = 1;
+            this.trackBar_vaccine_country.Name = "trackBar_vaccine_country";
+            this.trackBar_vaccine_country.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.trackBar_vaccine_country.Size = new System.Drawing.Size(260, 23);
+            this.trackBar_vaccine_country.TabIndex = 22;
+            this.trackBar_vaccine_country.TickFrequency = 10000;
+            this.trackBar_vaccine_country.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar_vaccine_country.Value = 1;
+            this.trackBar_vaccine_country.Scroll += new System.EventHandler(this.trackBar_vaccine_country_Scroll);
+            // 
+            // lbl_country_towns
+            // 
+            this.lbl_country_towns.AutoSize = true;
+            this.lbl_country_towns.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_country_towns.Location = new System.Drawing.Point(528, 67);
+            this.lbl_country_towns.Name = "lbl_country_towns";
+            this.lbl_country_towns.Size = new System.Drawing.Size(20, 23);
+            this.lbl_country_towns.TabIndex = 11;
+            this.lbl_country_towns.Text = "0";
+            // 
+            // button_country_vaccinated
+            // 
+            this.button_country_vaccinated.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_country_vaccinated.Location = new System.Drawing.Point(1130, 3);
+            this.button_country_vaccinated.Name = "button_country_vaccinated";
+            this.button_country_vaccinated.Size = new System.Drawing.Size(255, 34);
+            this.button_country_vaccinated.TabIndex = 21;
+            this.button_country_vaccinated.Text = "Провести вакцинацию";
+            this.button_country_vaccinated.UseVisualStyleBackColor = true;
+            this.button_country_vaccinated.Click += new System.EventHandler(this.button_country_vaccinated_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(255, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 23);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Количество городов";
+            // 
+            // lbl_country_population
+            // 
+            this.lbl_country_population.AutoSize = true;
+            this.lbl_country_population.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_country_population.Location = new System.Drawing.Point(528, 44);
+            this.lbl_country_population.Name = "lbl_country_population";
+            this.lbl_country_population.Size = new System.Drawing.Size(20, 23);
+            this.lbl_country_population.TabIndex = 8;
+            this.lbl_country_population.Text = "0";
+            // 
+            // lbl_country_infected
+            // 
+            this.lbl_country_infected.AutoSize = true;
+            this.lbl_country_infected.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_country_infected.Location = new System.Drawing.Point(911, 44);
+            this.lbl_country_infected.Name = "lbl_country_infected";
+            this.lbl_country_infected.Size = new System.Drawing.Size(20, 23);
+            this.lbl_country_infected.TabIndex = 7;
+            this.lbl_country_infected.Text = "0";
+            // 
+            // lbl_country_vaccinated
+            // 
+            this.lbl_country_vaccinated.AutoSize = true;
+            this.lbl_country_vaccinated.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_country_vaccinated.Location = new System.Drawing.Point(911, 67);
+            this.lbl_country_vaccinated.Name = "lbl_country_vaccinated";
+            this.lbl_country_vaccinated.Size = new System.Drawing.Size(20, 23);
+            this.lbl_country_vaccinated.TabIndex = 6;
+            this.lbl_country_vaccinated.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(515, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(238, 29);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Информация о стране";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(638, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(267, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Количество вакцинированных";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(638, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(218, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Количество зараженных";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(255, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Общее население в стране";
+            // 
+            // pictureBox_Earth
+            // 
+            this.pictureBox_Earth.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Earth.BackgroundImage = global::TEST4LABA.Resources.earth;
+            this.pictureBox_Earth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_Earth.Location = new System.Drawing.Point(76, 3);
+            this.pictureBox_Earth.Name = "pictureBox_Earth";
+            this.pictureBox_Earth.Size = new System.Drawing.Size(145, 145);
+            this.pictureBox_Earth.TabIndex = 0;
+            this.pictureBox_Earth.TabStop = false;
             // 
             // pictureBox_defolt
             // 
@@ -178,7 +412,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(991, 86);
+            this.button2.Location = new System.Drawing.Point(1003, 86);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 29;
@@ -444,240 +678,6 @@
             this.pictureBox_money.TabIndex = 0;
             this.pictureBox_money.TabStop = false;
             // 
-            // panel_Info_Country
-            // 
-            this.panel_Info_Country.Controls.Add(this.button1);
-            this.panel_Info_Country.Controls.Add(this.panel_trackbar_country);
-            this.panel_Info_Country.Controls.Add(this.lbl_vaccine_country);
-            this.panel_Info_Country.Controls.Add(this.pictureBox_country_pandemic);
-            this.panel_Info_Country.Controls.Add(this.label11);
-            this.panel_Info_Country.Controls.Add(this.lbl_season);
-            this.panel_Info_Country.Controls.Add(this.label8);
-            this.panel_Info_Country.Controls.Add(this.trackBar_vaccine_country);
-            this.panel_Info_Country.Controls.Add(this.lbl_country_towns);
-            this.panel_Info_Country.Controls.Add(this.button_country_vaccinated);
-            this.panel_Info_Country.Controls.Add(this.label10);
-            this.panel_Info_Country.Controls.Add(this.lbl_country_population);
-            this.panel_Info_Country.Controls.Add(this.lbl_country_infected);
-            this.panel_Info_Country.Controls.Add(this.lbl_country_vaccinated);
-            this.panel_Info_Country.Controls.Add(this.label4);
-            this.panel_Info_Country.Controls.Add(this.label3);
-            this.panel_Info_Country.Controls.Add(this.label2);
-            this.panel_Info_Country.Controls.Add(this.label1);
-            this.panel_Info_Country.Controls.Add(this.pictureBox_Earth);
-            this.panel_Info_Country.Location = new System.Drawing.Point(175, 11);
-            this.panel_Info_Country.Name = "panel_Info_Country";
-            this.panel_Info_Country.Size = new System.Drawing.Size(1397, 155);
-            this.panel_Info_Country.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(971, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Проверка";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel_trackbar_country
-            // 
-            this.panel_trackbar_country.BackColor = System.Drawing.Color.Lime;
-            this.panel_trackbar_country.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_trackbar_country.Controls.Add(this.red_cursor_country);
-            this.panel_trackbar_country.Location = new System.Drawing.Point(1135, 43);
-            this.panel_trackbar_country.Name = "panel_trackbar_country";
-            this.panel_trackbar_country.Size = new System.Drawing.Size(240, 50);
-            this.panel_trackbar_country.TabIndex = 27;
-            // 
-            // red_cursor_country
-            // 
-            this.red_cursor_country.BackColor = System.Drawing.Color.Black;
-            this.red_cursor_country.Location = new System.Drawing.Point(-1, 0);
-            this.red_cursor_country.Name = "red_cursor_country";
-            this.red_cursor_country.Size = new System.Drawing.Size(10, 50);
-            this.red_cursor_country.TabIndex = 26;
-            this.red_cursor_country.TabStop = false;
-            // 
-            // lbl_vaccine_country
-            // 
-            this.lbl_vaccine_country.AutoSize = true;
-            this.lbl_vaccine_country.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_vaccine_country.Location = new System.Drawing.Point(1231, 124);
-            this.lbl_vaccine_country.Name = "lbl_vaccine_country";
-            this.lbl_vaccine_country.Size = new System.Drawing.Size(20, 23);
-            this.lbl_vaccine_country.TabIndex = 25;
-            this.lbl_vaccine_country.Text = "0";
-            // 
-            // pictureBox_country_pandemic
-            // 
-            this.pictureBox_country_pandemic.BackgroundImage = global::TEST4LABA.Resources.earth_pandemic;
-            this.pictureBox_country_pandemic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_country_pandemic.Location = new System.Drawing.Point(20, 44);
-            this.pictureBox_country_pandemic.Name = "pictureBox_country_pandemic";
-            this.pictureBox_country_pandemic.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox_country_pandemic.TabIndex = 21;
-            this.pictureBox_country_pandemic.TabStop = false;
-            this.pictureBox_country_pandemic.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(1130, 124);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 23);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Значение:";
-            // 
-            // lbl_season
-            // 
-            this.lbl_season.AutoSize = true;
-            this.lbl_season.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_season.Location = new System.Drawing.Point(528, 90);
-            this.lbl_season.Name = "lbl_season";
-            this.lbl_season.Size = new System.Drawing.Size(20, 23);
-            this.lbl_season.TabIndex = 14;
-            this.lbl_season.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(255, 90);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 23);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Сезон года";
-            // 
-            // trackBar_vaccine_country
-            // 
-            this.trackBar_vaccine_country.AutoSize = false;
-            this.trackBar_vaccine_country.BackColor = System.Drawing.SystemColors.Control;
-            this.trackBar_vaccine_country.Location = new System.Drawing.Point(1125, 98);
-            this.trackBar_vaccine_country.Maximum = 10000;
-            this.trackBar_vaccine_country.Minimum = 1;
-            this.trackBar_vaccine_country.Name = "trackBar_vaccine_country";
-            this.trackBar_vaccine_country.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_vaccine_country.Size = new System.Drawing.Size(260, 23);
-            this.trackBar_vaccine_country.TabIndex = 22;
-            this.trackBar_vaccine_country.TickFrequency = 10000;
-            this.trackBar_vaccine_country.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar_vaccine_country.Value = 1;
-            this.trackBar_vaccine_country.Scroll += new System.EventHandler(this.trackBar_vaccine_country_Scroll);
-            // 
-            // lbl_country_towns
-            // 
-            this.lbl_country_towns.AutoSize = true;
-            this.lbl_country_towns.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_country_towns.Location = new System.Drawing.Point(528, 67);
-            this.lbl_country_towns.Name = "lbl_country_towns";
-            this.lbl_country_towns.Size = new System.Drawing.Size(20, 23);
-            this.lbl_country_towns.TabIndex = 11;
-            this.lbl_country_towns.Text = "0";
-            // 
-            // button_country_vaccinated
-            // 
-            this.button_country_vaccinated.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_country_vaccinated.Location = new System.Drawing.Point(1130, 3);
-            this.button_country_vaccinated.Name = "button_country_vaccinated";
-            this.button_country_vaccinated.Size = new System.Drawing.Size(255, 34);
-            this.button_country_vaccinated.TabIndex = 21;
-            this.button_country_vaccinated.Text = "Провести вакцинацию";
-            this.button_country_vaccinated.UseVisualStyleBackColor = true;
-            this.button_country_vaccinated.Click += new System.EventHandler(this.button_country_vaccinated_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(255, 67);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 23);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Количество городов";
-            // 
-            // lbl_country_population
-            // 
-            this.lbl_country_population.AutoSize = true;
-            this.lbl_country_population.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_country_population.Location = new System.Drawing.Point(528, 44);
-            this.lbl_country_population.Name = "lbl_country_population";
-            this.lbl_country_population.Size = new System.Drawing.Size(20, 23);
-            this.lbl_country_population.TabIndex = 8;
-            this.lbl_country_population.Text = "0";
-            // 
-            // lbl_country_infected
-            // 
-            this.lbl_country_infected.AutoSize = true;
-            this.lbl_country_infected.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_country_infected.Location = new System.Drawing.Point(911, 44);
-            this.lbl_country_infected.Name = "lbl_country_infected";
-            this.lbl_country_infected.Size = new System.Drawing.Size(20, 23);
-            this.lbl_country_infected.TabIndex = 7;
-            this.lbl_country_infected.Text = "0";
-            // 
-            // lbl_country_vaccinated
-            // 
-            this.lbl_country_vaccinated.AutoSize = true;
-            this.lbl_country_vaccinated.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_country_vaccinated.Location = new System.Drawing.Point(911, 67);
-            this.lbl_country_vaccinated.Name = "lbl_country_vaccinated";
-            this.lbl_country_vaccinated.Size = new System.Drawing.Size(20, 23);
-            this.lbl_country_vaccinated.TabIndex = 6;
-            this.lbl_country_vaccinated.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(515, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 29);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Информация о стране";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(638, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(267, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Количество вакцинированных";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(638, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Количество зараженных";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(255, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Общее население в стране";
-            // 
-            // pictureBox_Earth
-            // 
-            this.pictureBox_Earth.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Earth.BackgroundImage = global::TEST4LABA.Resources.earth;
-            this.pictureBox_Earth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_Earth.Location = new System.Drawing.Point(76, 3);
-            this.pictureBox_Earth.Name = "pictureBox_Earth";
-            this.pictureBox_Earth.Size = new System.Drawing.Size(145, 145);
-            this.pictureBox_Earth.TabIndex = 0;
-            this.pictureBox_Earth.TabStop = false;
-            // 
             // panel_date
             // 
             this.panel_date.BackColor = System.Drawing.Color.Transparent;
@@ -842,6 +842,13 @@
             this.Text = "Modeling";
             this.bottom_Info_Panel.ResumeLayout(false);
             this.bottom_Info_Panel.PerformLayout();
+            this.panel_Info_Country.ResumeLayout(false);
+            this.panel_Info_Country.PerformLayout();
+            this.panel_trackbar_country.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.red_cursor_country)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_country_pandemic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine_country)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Earth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_defolt)).EndInit();
             this.panel_Info_Town.ResumeLayout(false);
             this.panel_Info_Town.PerformLayout();
@@ -851,13 +858,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Town)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_money)).EndInit();
-            this.panel_Info_Country.ResumeLayout(false);
-            this.panel_Info_Country.PerformLayout();
-            this.panel_trackbar_country.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.red_cursor_country)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_country_pandemic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_vaccine_country)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Earth)).EndInit();
             this.panel_date.ResumeLayout(false);
             this.MainPanel.ResumeLayout(false);
             this.top_info_panel.ResumeLayout(false);
